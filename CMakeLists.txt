@@ -12,6 +12,5 @@ endif()
 add_executable(code src/main.cpp)
 
 if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
-  target_compile_options(code PRIVATE -O2 -pipe -static-libstdc++)
+  target_compile_options(code PRIVATE -O2 -pipe)
 endif()
-
